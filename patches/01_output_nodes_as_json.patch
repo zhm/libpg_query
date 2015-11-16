@@ -140,7 +140,7 @@ index 0000000..eaded0f
 +static void
 +_outToken(StringInfo str, const char *s)
 +{
-+	if (s == NULL || *s == '\0')
++	if (s == NULL)
 +	{
 +		appendStringInfoString(str, "null");
 +		return;
